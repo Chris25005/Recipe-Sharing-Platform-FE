@@ -71,7 +71,5 @@ A full-stack **MERN** application that allows users to **create**, **share**, **
 | Authentication | JWT (JSON Web Tokens) |
 | Media Storage | Could be Cloudinary / Firebase (optional) |
 
----
 
-## 📂 Project Structure
 
