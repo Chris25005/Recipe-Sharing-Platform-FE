@@ -3,7 +3,8 @@ import axios from 'axios'
 
 const AuthCtx = createContext(null)
 
-const API_BASE = import.meta.env.VITE_API_URL || 'http://localhost:5000/api'
+// const API_BASE = import.meta.env.VITE_API_URL || 'http://localhost:5000/api'
+const API_BASE = import.meta.env.VITE_API_URL || (import.meta.env.PROD ? 'https://recipe-sharing-platform-be-1.onrender.com/api' : 'http://localhost:5000/api')
 axios.defaults.baseURL = API_BASE
 
 export function AuthProvider({ children }) {
